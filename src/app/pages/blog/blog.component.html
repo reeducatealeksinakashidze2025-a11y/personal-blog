@@ -1,0 +1,28 @@
+<div class="blog-container">
+  <h2>ბლოგები</h2>
+
+  <input
+    type="text"
+    placeholder="ძებნა სათაურით..."
+    [(ngModel)]="searchTerm"
+    (input)="onSearch()"
+    class="search-input"
+  />
+
+  <div *ngIf="blogs.length; else noBlogs">
+    <app-blog-card
+      *ngFor="let blog of blogs"
+      [blog]="blog"
+    ></app-blog-card>
+  </div>
+  <app-pagination
+    [page]="page"
+    [pageSize]="pageSize"
+    [totalCount]="totalCount"
+    (pageChange)="onPageChange($event)">
+</app-pagination>
+
+  <ng-template #noBlogs>
+    <p>ბლოგები ვერ მოიძებნა.</p>
+  </ng-template>
+</div>

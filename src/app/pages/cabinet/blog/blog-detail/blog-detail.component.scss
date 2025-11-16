@@ -1,0 +1,92 @@
+.blog-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  margin-bottom: 24px;
+}
+
+.blog-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.blog-author {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.blog-content {
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+
+  /* ყველა შიდა ელემენტისთვის ჩარჩოში შეზღუდვა */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  img, iframe, video, table, pre {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+  }
+
+  p, span, div, a {
+    word-wrap: break-word;
+    word-break: break-word; 
+  }
+  
+
+  
+}
+
+
+
+.divider {
+  margin: 24px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* --- Add Comment --- */
+.add-comment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-textarea {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.btn-send {
+  width: max-content;
+  padding: 8px 14px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: #125a9c;
+  }
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+

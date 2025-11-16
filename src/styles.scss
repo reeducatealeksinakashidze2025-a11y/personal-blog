@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@use './styles/_variables.scss' as *;
+@use './styles/_typography.scss' as *;
+@use './styles/_mixins.scss' as *;
+
+html, body {
+  font-family: $font-sans;
+  // color: $color-text;
+  // background: $color-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+

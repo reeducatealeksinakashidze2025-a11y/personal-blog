@@ -1,0 +1,32 @@
+
+<div class="container mt-4">
+  <h2 class="mb-4">New Blog</h2>
+<!-- 
+  <div class="mb-3">
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Title"
+      [(ngModel)]="blog.title">
+  </div>
+
+  <div class="mb-3">
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Cover Image URL"
+      [(ngModel)]="blog.coverImageUrl">
+  </div>
+
+  <div >
+   
+      <quill-editor [(ngModel)]="blog.contentHtml" [style]="{height: '250px'}"></quill-editor>
+
+  </div> -->
+   <app-blog-fields [blog]="blog"></app-blog-fields>
+
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-primary" (click)="save()">Save Blog</button>
+  </div>
+</div>
+

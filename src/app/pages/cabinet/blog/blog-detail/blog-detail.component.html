@@ -1,0 +1,25 @@
+<div class="blog-container" *ngIf="blog">
+  <h2 class="blog-title">{{ blog.title }}</h2>
+  <p class="blog-author">ავტორი: {{ blog.author?.fullName }}</p>
+
+  <div class="blog-content" [innerHTML]="blog.contentHtml"></div>
+</div>
+
+<hr class="divider">
+
+<!-- ახალი მთავარი კომენტარი -->
+<div *ngIf="isAuthenticatedUser" class="add-comment-box">
+  <textarea [(ngModel)]="newCommentText" placeholder="კომენტარი" class="comment-textarea"></textarea>
+  <button class="btn-send" (click)="addComment()">გაგზავნა</button>
+</div>
+
+<hr class="divider">
+<div class="comments-container">
+  <app-comment-thread
+    *ngFor="let comment of comments"
+    [comment]="comment"
+    [level]="0"
+    (replyAdded)="handleReply($event)"
+  ></app-comment-thread>
+</div>
+

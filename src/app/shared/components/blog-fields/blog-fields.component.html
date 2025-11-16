@@ -1,0 +1,24 @@
+<div>
+  <div class="mb-3">
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Title"
+      [(ngModel)]="blog.title">
+  </div>
+
+  <div class="mb-3">
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Cover Image URL"
+      [(ngModel)]="blog.coverImageUrl">
+  </div>
+
+  <div>
+    <quill-editor 
+      [(ngModel)]="blog.contentHtml"
+      [style]="{height: '300px'}">
+    </quill-editor>
+  </div>
+</div>
