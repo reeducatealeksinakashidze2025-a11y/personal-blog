@@ -30,6 +30,6 @@ export class HeaderComponent {
   //   this.router.navigate(['/search'], { queryParams: { q }});
   // }
 
-   // for responsive menu
+  
  
 }

@@ -22,7 +22,6 @@
   overflow-wrap: anywhere;
   line-height: 1.7;
 
-  /* ყველა შიდა ელემენტისთვის ჩარჩოში შეზღუდვა */
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -51,7 +50,6 @@
   border-top: 1px solid #ddd;
 }
 
-/* --- Add Comment --- */
 .add-comment-box {
   display: flex;
   flex-direction: column;

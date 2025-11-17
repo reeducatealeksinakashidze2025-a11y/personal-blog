@@ -24,17 +24,15 @@ export class BlogComponent implements OnInit, OnDestroy {
   constructor(private blogService: BlogService, private sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
-    // subscribe search input with debounce
     this.searchSubscription = this.searchSubject
       .pipe(
-        debounceTime(2000),        // 500ms დაელოდება შეჩერებას
-        distinctUntilChanged()    // იგივე ტექსტისთვის არ გაიშვას მეორე მოთხოვნა
+        debounceTime(2000),        
+        distinctUntilChanged()    
       )
       .subscribe((searchText: string) => {
         this.loadBlogs(searchText);
       });
 
-    // αρχική φόρτωση ბლოგები
     this.loadBlogs('');
   }
 
@@ -43,7 +41,6 @@ export class BlogComponent implements OnInit, OnDestroy {
   }
 
   // loadBlogs(search: string): void {
-  //   // call backend with search parameter
   //   this.blogService.getAll(false,search).subscribe({
   //     next: (data) => {
   //       this.blogs = data.value || [];

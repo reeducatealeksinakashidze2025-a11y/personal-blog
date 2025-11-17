@@ -9,6 +9,7 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared-module';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -26,7 +27,9 @@ import { SharedModule } from '../shared/shared-module';
     CommonModule,
      FormsModule,
      RouterModule,
-     SharedModule
+     SharedModule,
+      TranslateModule
+
   ]
 })
 export class PagesModule { }

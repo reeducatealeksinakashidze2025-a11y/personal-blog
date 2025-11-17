@@ -9,7 +9,6 @@
   height: 240px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.2s, box-shadow 0.2s;
-  // background: linear-gradient(to right, rgba(251,249,247,0.85), rgba(251,249,247,0)) !important;
 
   &:hover {
     transform: translateY(-4px);
@@ -72,7 +71,6 @@
   }
 }
 
-/* Hide images inside blog content */
 ::ng-deep .blog-content img {
   display: none;
 }

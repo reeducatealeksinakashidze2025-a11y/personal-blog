@@ -14,24 +14,24 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* ეს დაეხმარება ელემენტების ვერტიკალურ განლაგებას */
-    gap: 10px; /* ელემენტებს შორის სივრცე */
+    flex-direction: column; 
+    gap: 10px; 
   }
   
   .form-title {
     text-align: center;
-    margin: 0 0 20px 0; /* ქვედა სივრცე ჰედერისთვის */
+    margin: 0 0 20px 0; 
     color: #333;
     font-family: Arial, sans-serif;
   }
   
   .form-group {
     display: flex;
-    flex-direction: column; /* ლეიბლი და ინპუტი ვერტიკალურად დალაგდეს */
+    flex-direction: column; 
   }
   
   label {
-    margin-bottom: 5px; /* ლეიბლისა და ინპუტის შორის სივრცე */
+    margin-bottom: 5px; 
     font-weight: bold;
   }
   
@@ -102,5 +102,5 @@
     color: red;
     font-size: 14px;
     margin-top: 10px;
-    text-align: center; /* ტექსტის ცენტრში განლაგება */
+    text-align: center;
   }

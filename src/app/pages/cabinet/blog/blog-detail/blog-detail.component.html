@@ -7,7 +7,6 @@
 
 <hr class="divider">
 
-<!-- ახალი მთავარი კომენტარი -->
 <div *ngIf="isAuthenticatedUser" class="add-comment-box">
   <textarea [(ngModel)]="newCommentText" placeholder="კომენტარი" class="comment-textarea"></textarea>
   <button class="btn-send" (click)="addComment()">გაგზავნა</button>

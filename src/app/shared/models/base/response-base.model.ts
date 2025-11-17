@@ -26,7 +26,6 @@ export class ResponseBase<T = any> {
     });
   }
 
-  /** Optional runtime validation */
   static isValidResponse(obj: any): obj is ResponseBase<any> {
     return (
       obj &&

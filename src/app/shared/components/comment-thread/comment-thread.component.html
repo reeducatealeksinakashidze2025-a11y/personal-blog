@@ -1,20 +1,4 @@
-<!-- <div class="comment-box">
-  <p class="author">{{ comment.author.fullName }}</p>
-  <p class="text">{{ comment.text }}</p>
 
-  <div class="reply-input">
-    <input [(ngModel)]="replyText" placeholder="პასუხი..." />
-    <button (click)="addReply()">OK</button>
-  </div>
-
-  <div class="replies" *ngIf="comment.replies?.length">
-    <app-comment-thread
-      *ngFor="let child of comment.replies"
-      [comment]="child"
-      (replyAdded)="replyAdded.emit($event)"
-    ></app-comment-thread>
-  </div>
-</div> -->
 <div class="comment-box" [style.marginLeft.px]="level * 20">
   <div class="comment-content">
     <p class="author">{{ comment.author.fullName }}</p>

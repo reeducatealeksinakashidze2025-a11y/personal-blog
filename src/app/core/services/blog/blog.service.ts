@@ -23,10 +23,8 @@ export class BlogService {
 //   const params: any = {};
 //   if (search) params.search = search;
 
-//   // აირჩევე route
 //   const url = userOnly ? `${this.apiUrl}/my` : this.apiUrl;
 
-//   // თუ userOnly, აუცილებლად ავამოწმოთ authorization
 //   const headers = userOnly && this.authService.isAuthenticated()
 //     ? new HttpHeaders().set('Authorization', `Bearer ${this.authService.getToken()}`)
 //     : undefined;

@@ -27,7 +27,6 @@ export class ProfileComponent  implements OnInit {
  loadCurrentUser() {
   this.loading = true;
 
-  // ჩაკვეთილი getCurrentUser() რომელიც Observable<User> აბრუნებს
   this.authService.getCurrentUser().subscribe({
     next: (user) => {
       this.user = user;

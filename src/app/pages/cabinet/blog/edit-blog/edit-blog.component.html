@@ -1,15 +1,5 @@
 <div class="container mt-4">
   <h2>Edit Blog</h2>
-
-  <!-- <input type="text" class="form-control mb-3" [(ngModel)]="blog.title">
-
-    <input 
-      type="text" 
-      class="form-control" 
-      placeholder="Cover Image URL"
-      [(ngModel)]="blog.coverImageUrl">
-
-  <quill-editor [(ngModel)]="blog.contentHtml" [style]="{height: '250px'}"></quill-editor> -->
    <app-blog-fields [blog]="blog"></app-blog-fields>
 <div class="d-flex justify-content-end">
   <button class="btn btn-primary mt-3" (click)="onSubmit()">Update</button>

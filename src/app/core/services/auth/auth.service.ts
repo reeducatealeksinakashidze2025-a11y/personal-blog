@@ -44,7 +44,6 @@ export class AuthService {
     return !!token && !this.isTokenExpired(token);
   }
 
-  // Example method to decode and check token expiration
   private isTokenExpired(token: string): boolean {
     const payload = JSON.parse(atob(token.split('.')[1]));
     const expiry = payload.exp;
@@ -53,7 +52,7 @@ export class AuthService {
 
  public getCurrentUser(): Observable<User | undefined> {
   const token = this.getToken();
-  if (!token) return of(undefined); // RxJS of()
+  if (!token) return of(undefined); 
 
   try {
     const payload = JSON.parse(atob(token.split('.')[1]));

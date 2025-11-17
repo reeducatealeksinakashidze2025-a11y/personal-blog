@@ -34,6 +34,11 @@
                 "glob": "**/*",
                 "input": "public",
                 "output": "/"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": [
@@ -110,6 +115,11 @@
               {
                 "glob": "**/*",
                 "input": "public",
+                "output": "/"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src",
                 "output": "/"
               }
             ],

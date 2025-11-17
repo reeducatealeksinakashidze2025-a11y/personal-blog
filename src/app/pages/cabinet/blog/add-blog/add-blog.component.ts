@@ -18,14 +18,6 @@ export class AddBlogComponent {
  
 
 
-quillModules = {
-  toolbar: [
-    ['bold', 'italic', 'underline'],        // toggled buttons
-    [{ 'header': 1 }, { 'header': 2 }],     // custom button values
-    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-    ['link', 'image']                       // add's image support
-  ]
-};
 
   constructor(private blogService: BlogService, private router: Router) {}
 
